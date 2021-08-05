@@ -11,26 +11,26 @@ const fighters = [
     quote: 'Come on! I\'m gonna cure you of the disease called life.'
   },
   {
-      name: 'Kyo Kusanagi',
-      japanese:'草薙京',
-      originalAppearance: 'KOF ‘94',
-      birthplace: 'Japan',
-      fightingStyle: 'Kusanagi Style, Kenpo',
-      powers: 'Pyrokinesis',
-      job: 'none',
-      image: '/KyoKusanagi.webp',
-      quote: 'My fist has 1800 years of history! I can easily break you!'
+    name: 'Kyo Kusanagi',
+    japanese:'草薙京',
+    originalAppearance: 'KOF ‘94',
+    birthplace: 'Japan',
+    fightingStyle: 'Kusanagi Style, Kenpo',
+    powers: 'Pyrokinesis',
+    job: 'none',
+    image: '/KyoKusanagi.webp',
+    quote: 'My fist has 1800 years of history! I can easily break you!'
   },
   {
-      name: 'Benimaru Nikaido',
-      japanese: '二階堂紅丸',
-      originalAppearance: 'KOF ‘94',
-      birthplace: 'Japan',
-      fightingStyle: 'Shoot Boxing, Muay Thai',
-      powers: 'Electrokinesis',
-      job: 'Model',
-      image: '/Benimaru.webp',
-      quote: 'There aren’t enough compliments to praise my beautiful fighting!'
+    name: 'Benimaru Nikaido',
+    japanese: '二階堂紅丸',
+    originalAppearance: 'KOF ‘94',
+    birthplace: 'Japan',
+    fightingStyle: 'Shoot Boxing, Muay Thai',
+    powers: 'Electrokinesis',
+    job: 'Model',
+    image: '/Benimaru.webp',
+    quote: 'There aren’t enough compliments to praise my beautiful fighting!'
   },
   {
     name: 'Goro Daimon',
