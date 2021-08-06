@@ -4,11 +4,11 @@ CREATE TABLE fighters (
   id BIGINT GENERATED ALWAYS AS IDENTITY,
   name TEXT NOT NULL,
   japanese TEXT NOT NULL,
-  origin TEXT NOT NULL,
+  origin VARCHAR(256) NOT NULL,
   birthplace TEXT NOT NULL,
   style TEXT NOT NULL,
   job TEXT NOT NULL,
   powers TEXT NOT NULL,
-  image TEXT NOT NULL,
+  image VARCHAR(256) NOT NULL,
   quote TEXT NOT NULL
 );
