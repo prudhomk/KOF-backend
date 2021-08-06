@@ -96,4 +96,42 @@ describe('demo routes', () => {
     const res = await request(app).get(`/api/v1/fighters/${fighter.id}`);
     expect(res.body).toEqual(fighter);
   });
+
+  it('updates a fighter by id via PUT', async () => {
+    const fighter = await Fighter.insert({
+      name: 'Angel',
+      japanese: 'アンヘル',
+      origin: 'KOF 2001',
+      birthplace: 'Mexico',
+      style: 'Perfunctory, Pro wrestling',
+      powers: 'Enhanced Superhuman',
+      job: 'Agent of NESTS',
+      image: '/Angel.webp',
+      quote: 'Be me good or be me bad, it is I who always prevails.'
+    });
+
+    fighter.job = 'Former agent of NESTS';
+
+    const res = await request(app).put(`/api/v1/fighters/${fighter.id}`)
+      .send(fighter);
+    expect(res.body).toEqual(fighter);
+  });
+
+  it('deletes a fighter by id via DELETE', async () => {
+    const fighter = await Fighter.insert({
+      name: 'Mario',
+      japanese: 'M',
+      origin: 'Super Mario Bros',
+      birthplace: 'Mushroom Kingdom',
+      style: 'none',
+      powers: 'Costume Changes',
+      job: 'Plumber',
+      image: 'none',
+      quote: 'Mama Mia'
+    });
+
+    const res = await request(app).delete(`/api/v1/fighters/${fighter.id}`)
+      .send(fighter);
+    expect(res.body).toEqual(fighter);
+  });
 });
